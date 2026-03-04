@@ -1,0 +1,474 @@
+<div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDXHJnc581vv4i-cyoHTb0wNMfsl8gWs8s_89PrEoRsrt66zTNnXbbOGqHEF5x9Xv88_82ofJM2gM5V9uYOATPbYgGtfbTvSNaHc6vPdhmkR7P0AA4yAGOLzkZNm6lPiry4sbz26rGyo_dXy2z2j79njY3ovlevJLdS241et-_f6lCtkLDecgP7JkDIshI/s1619/Grey%20minimalist%20business%20project%20presentation%20-0001.png" style="margin-left: 1em; margin-right: 1em;"><img alt="AAS Proceedings" border="0" data-original-height="710" data-original-width="1619" height="140" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDXHJnc581vv4i-cyoHTb0wNMfsl8gWs8s_89PrEoRsrt66zTNnXbbOGqHEF5x9Xv88_82ofJM2gM5V9uYOATPbYgGtfbTvSNaHc6vPdhmkR7P0AA4yAGOLzkZNm6lPiry4sbz26rGyo_dXy2z2j79njY3ovlevJLdS241et-_f6lCtkLDecgP7JkDIshI/w320-h140/Grey%20minimalist%20business%20project%20presentation%20-0001.png" title="AAS Proceedings" width="320" /></a></div><br /> 
+
+<head>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2021.3.914/js/kendo.all.min.js"></script>
+    <style>
+        /* Common Styles */
+        .aas{
+            margin:30px auto;
+            border: 2px double red;
+            background:#DBF6F6;
+        }
+        h2{
+            margin:0px;
+            color:green;
+            font-family:Revenue;
+        }
+        hr{
+            border-style: double;
+            border-color:Steelblue;
+            margin-bottom:0px;
+        }
+        td {
+            padding: 3px;
+            font-family:arial;
+            font-weight:bold;
+        }
+        tr:hover {background-color:#f5f5f5;}
+        input, select{
+            font-family:arial;
+            font-weight:bold;
+        }
+        .proceeding{
+            height:100%;
+            background-color:white;
+            margin:10px;
+        }
+        button{
+            margin-bottom:10px;
+            border-radius: 4px;
+            background-color: white; 
+            color: black; 
+            border: 2px solid #008CBA;
+            color:green;
+            font-family:Revenue;
+            font-size:20px;
+        }
+        button:hover {
+            border-radius: 4px;
+            background-color: #008CBA;
+            color: white;
+        }
+        marquee{
+            margin:0px;
+            padding:0px;
+            font-family:arial black;
+        }
+        
+        /* Proceeding Styles */
+        .proc-container {
+            width:720px;
+            margin:auto;
+            padding:10px 20px 2px 20px ;
+            border: 2px double red;
+            background:white;
+        }
+        h4{
+            margin:0px;
+            font-family:Revenue;
+        }
+        h6{
+            margin:0px;
+            font-family:Trebuchet MS;
+            font-size:16px;
+        }
+        p{
+            font-family:Trebuchet MS;
+            font-size:16px;
+            text-align:justify;
+        }
+        .sub{
+            width:10%;
+            height:90px;
+            float:left;
+            font-family:Trebuchet MS;
+            font-size:16px;
+        }
+        .spm{
+            width:90%;
+            height:90px;
+            float:right;
+            text-align:justify;
+            font-family:Trebuchet MS;
+            font-size:16px;
+        }
+        .stamp{
+            width:100%;
+            text-align:right;
+            font-family:Trebuchet MS;
+        }
+        .to{
+            margin-bottom:10px;
+            font-family:Trebuchet MS;
+        }
+        .proc{
+            width:74%;
+            height:30px;
+            float:left;
+            margin-top:5px;
+            font-family:Trebuchet MS;
+        }
+        .date{
+            width:26%;
+            height:30px;
+            float:right;
+            margin-top:5px;
+            font-family:Trebuchet MS;
+        }
+        .ref{
+            width:10%;
+            height:70px;
+            float:left;
+            font-family:Trebuchet MS;
+            font-size:16px;
+        }
+        .refgo{
+            width:90%;
+            height:70px;
+            float:left;
+            font-family:Trebuchet MS;
+            font-size:16px;
+        }
+        .copy{
+            font-family:Trebuchet MS;
+        }
+        table{
+            font-family:Trebuchet MS;
+        }
+        .print-btn {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div>
+        <div class="col-sm-12">
+            <!-- AAS Form Section -->
+            <div class="aas">
+                <h2 align="center">AUTOMATIC ADVANCEMENT SCHEME</h2>
+                <hr />
+                <marquee><p>Please follow more Updates ** www.skbadi.com ** </p></marquee>	
+                <form class="form-group proceeding" id="aasForm">
+                    <center>
+                        <table>
+                            <tbody>
+                                <tr><td>Employee Name:</td><td><input class="form-control" id="ename" required="" type="text" /></td></tr>
+                                <tr><td>Employee ID:</td><td><input class="form-control" id="eid" required="" type="text" /></td></tr>
+                                <tr><td>Designation:</td>
+                                    <td>
+                                        <select class="form-control" id="desi">
+                                            <option value="">SelectYourDesignation</option>
+                                            <option>SGT</option>
+                                            <option>SA Telugu</option>
+                                            <option>SA Hindi</option>
+                                            <option>SA English</option>
+                                            <option>SA Maths</option>
+                                            <option>SA Phy.Science</option>
+                                            <option>SA Bio.Science</option>
+                                            <option>SA Social</option>
+                                            <option>LP Telugu</option>
+                                            <option>LP Hindi</option>
+                                            <option>PD II</option>
+                                            <option>PET</option>
+                                            <option>Drawing Master</option>
+                                            <option>LFL HM</option>
+                                            <option>GHM Gr.II</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr><td>Date of Joining (PD):</td><td><input class="form-control" id="doj" type="date" /></td></tr>
+                                <tr><td>Present Scale:</td>
+                                    <td>
+                                        <select class="form-control" id="ps">
+                                            <option value="">Select</option>
+                                            <option>31040-92050</option>
+                                            <option>32810-96890</option>
+                                            <option>42300-115270</option>
+                                            <option>43490-118230</option>
+                                            <option>51320-127310</option>
+                                            <option>54220-133630</option>
+                                            <option>58850-137050</option>
+                                            <option>67300-143890</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr><td>Present Basic Pay:</td>
+                                    <td>
+                                        <select class="form-control" id="pbp">
+                                            <option value="">Select</option>
+                                            <option>19000</option>
+											<option>19640</option>
+											<option>20280</option>
+											<option>20920</option>
+											<option>21580</option>
+											<option>22240</option>
+<option>22900</option>
+<option>23590</option>
+<option>24280</option>
+<option>24970</option>
+<option>25690</option>
+<option>26410</option>
+<option>27130</option>
+<option>27880</option>
+<option>28630</option>
+<option>29380</option>
+<option>30210</option>
+<option>31040</option>
+<option>31870</option>
+<option>32810</option>
+<option>33750</option>
+<option>34690</option>
+<option>35720</option>
+<option>36750</option>
+<option>37780</option>
+<option>38890</option>
+<option>40000</option>
+<option>41110</option>
+<option>42300</option>
+<option>43490</option>
+<option>44680</option>
+<option>45960</option>
+<option>47240</option>
+<option>48520</option>
+<option>49920</option>
+<option>51320</option>
+<option>52720</option>
+<option>54220</option>
+<option>55720</option>
+<option>57220</option>
+<option>58850</option>
+<option>60480</option>
+<option>62110</option>
+<option>63840</option>
+<option>65570</option>
+<option>67300</option>
+<option>69150</option>
+<option>71000</option>
+<option>72850</option>
+<option>74840</option>
+<option>76830</option>
+<option>78820</option>
+<option>80960</option>
+<option>83100</option>
+<option>85240</option>
+<option>87510</option>
+<option>89780</option>
+<option>92050</option>
+<option>94470</option>
+<option>96890</option>
+<option>99310</option>
+<option>101870</option>
+<option>104430</option>
+<option>106990</option>
+<option>109750</option>
+<option>112510</option>
+<option>115270</option>
+<option>118230</option>
+<option>121190</option>
+<option>124150</option>
+<option>127310</option>
+<option>130470</option>
+<option>133630</option>
+<option>137050</option>
+<option>140470</option>
+<option>143890</option>
+<option>147310</option>
+<option>151000</option>
+<option>154690</option>
+<option>158380</option>
+<option>162070</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr><td>AAS Years(Select-6/12/18/24 Years):</td>
+                                    <td>
+                                        <select class="form-control" id="aas">
+                                            <option value="">Select</option>
+                                            <option value="6">6 Years</option>
+                                            <option value="12">12 Years</option>
+                                            <option value="18">18 Years</option>
+                                            <option value="24">24 Years</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr><td>Date of Next Increment:</td><td><input class="form-control" id="doni" type="date" /></td></tr>
+                                <tr><td>Place of Working:</td><td><input class="form-control" id="pow" type="text" /></td></tr>
+                                <tr><td>Mandal:</td><td><input class="form-control" id="mand" type="text" /></td></tr>
+                                <tr><td>District:</td><td><input class="form-control" id="dis" type="text" /></td></tr>
+                                <tr><td>DDO Name:</td><td><input class="form-control" id="ddoname" type="text" /></td></tr>
+                                <tr><td>DDO Designation:</td>
+                                    <td>
+                                        <select class="form-control" id="ddodesi">
+                                            <option value="">Select</option>
+                                            <option>HEADMASTER</option>
+                                            <option>MANDAL EDUCATIONAL OFFICER</option>
+                                            <option>HEADMISTRESS</option>
+                                            <option>SCHOOL COMPLEX HEADMASTER</option>
+                                            <option>SCHOOL COMPLEX HEADMASTER</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr><td>DDO Office Name:</td><td><input class="form-control" id="ddooffi" type="text" /></td></tr>
+                                <tr><td>DDO Qualifications:</td><td><input class="form-control" id="ddoqua" type="text" /></td></tr>
+                                
+                            </tbody>
+                        </table>
+                    </center>
+                    <table align="center">
+                        <tr>
+                            <td><button id="generateProc" type="button">Generate Proceeding</button></td>
+                            
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <!-- Proceeding Section (Initially Hidden) -->
+            <div id="proceedingSection" style="display: none;">
+                <div class="proc-container" id="print">
+                    <!-- Proceeding will be inserted here by JavaScript -->
+                </div>
+                <div class="print-btn">
+                    <button class="btn" onclick="ExportPdf()" type="button">DOWNLOAD PROCEEDING (A4 PDF)</button>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div> 
+
+<script>
+    // Export to PDF function - with border preserved
+    function ExportPdf() {
+        var element = document.getElementById("print");
+        
+        // Force border to be included
+        $(element).css("border", "2px double red");
+        
+        kendo.drawing.drawDOM(element, {
+            paperSize: "A4",
+            align: "center",
+            margin: { top: "0.2cm", right: "0.5cm", bottom: "0.5cm", left: "0.5cm" },
+            portrait: true,
+            scale: 0.75,
+            forcePageBreak: ".page-break",
+            template: null
+        }).then(function(group) {
+            // Ensure border is rendered
+            kendo.drawing.pdf.saveAs(group, "AAS_Proceeding.pdf");
+        });
+    }
+
+    // Generate Proceeding function
+    document.getElementById('generateProc').addEventListener('click', function() {
+        // Get form values
+        const data = {
+            ddodesi: document.getElementById('ddodesi').value,
+            ddooffi: document.getElementById('ddooffi').value,
+            mand: document.getElementById('mand').value,
+            ddoname: document.getElementById('ddoname').value,
+            ddoqua: document.getElementById('ddoqua').value,
+            ename: document.getElementById('ename').value,
+            pow: document.getElementById('pow').value,
+            desi: document.getElementById('desi').value,
+            doj: document.getElementById('doj').value,
+            aas: document.getElementById('aas').value,
+            doni: document.getElementById('doni').value,
+            ps: document.getElementById('ps').value,
+            pbp: document.getElementById('pbp').value,
+        };
+
+        // Validate required fields
+        if (!data.ename || !data.desi || !data.doj || !data.aas || !data.ddodesi) {
+            alert('Please fill all required fields');
+            return;
+        }
+
+        // Basic Arrays
+        const grade = {6: "Special Grade(6Yrs)", 12: "SPP I-A(12Yrs)", 18: "SPP I-B(18Yrs)", 24: "SPP II(24Yrs)"};
+        const sgt = {6: "32810-96890", 12: "42300-115270", 18: "42300-115270", 24: "51320-127310"};
+        const sa = {6: "43490-118230", 12: "51320-127310", 18: "51320-127310", 24: "58850-137050"};
+        const hm = {6: "54220-133630", 12: "58850-137050", 18: "58850-137050", 24: "67300-143890"};	
+        const sgtdesi = ["SGT","LP Telugu","LP Hindi","PET","Drawing Master"]; 
+        const sadesi = ["SA Telugu","SA Hindi","SA English","SA Maths","SA Phy.Science","SA Bio.Science","SA Social","PD II","LFL HM"]; 
+        const basic = [19000, 19640, 20280, 20920, 21580, 22240, 22900, 23590, 24280, 24970, 25690, 26410, 27130, 27880, 28630, 29380, 30210, 31040, 31870, 32810, 33750, 34690, 35720, 36750, 37780, 38890, 40000, 41110, 42300, 43490, 44680, 45960, 47240, 48520, 49920, 51320, 52720, 54220, 55720, 57220, 58850, 60480, 62110, 63840, 65570, 67300, 69150, 71000, 72850, 74840, 76830, 78820, 80960, 83100, 85240, 87510, 89780, 92050, 94470, 96890, 99310, 101870, 104430, 106990, 109750, 112510, 115270, 118230, 121190, 124150, 127310, 130470, 133630, 137050, 140470, 143890, 147310, 151000, 154690, 158380, 162070];
+
+        const sgtscale = sgtdesi.includes(data.desi);
+        const sascale = sadesi.includes(data.desi);
+        
+        const indexno = basic.indexOf(parseInt(data.pbp));
+        const indexno_1 = indexno + 1;
+        const aasbasic = basic[indexno_1] || "";
+
+        // Format dates
+        const dojdate = new Date(data.doj).toLocaleDateString('en-GB', {day: '2-digit', month: 'short', year: 'numeric'}).replace(/ /g, '-');
+        const donidate = new Date(data.doni).toLocaleDateString('en-GB', {day: '2-digit', month: 'short', year: 'numeric'}).replace(/ /g, '-');
+        
+        let date = new Date(data.doj);
+        date.setFullYear(date.getFullYear() + parseInt(data.aas));
+        const aasDate = date.toLocaleDateString('en-GB', {day: '2-digit', month: 'short', year: 'numeric'}).replace(/ /g, '-');
+
+        let dateBefore = new Date(data.doj);
+        dateBefore.setFullYear(dateBefore.getFullYear() + parseInt(data.aas));
+        dateBefore.setDate(dateBefore.getDate() - 1);
+        const aasDateBefore = dateBefore.toLocaleDateString('en-GB', {day: '2-digit', month: 'short', year: 'numeric'}).replace(/ /g, '-');
+
+        let scale = "";
+        if (sgtscale) scale = sgt[data.aas];
+        else if (sascale) scale = sa[data.aas];
+        else scale = hm[data.aas];
+
+        // Generate Proceeding HTML
+        let html = `
+            <h4 align='center'>PROCEEDINGS OF THE ${data.ddodesi}, ${data.ddooffi}, MDL: ${data.mand}</h4>
+            <h6 align='center'>Present: ${data.ddoname}, ${data.ddoqua}</h6>	  
+            <hr>
+            <div class="proc">Proc.No.______/AAS/________</div>
+            <div class="date">Date:_________________</div>
+            <div class="sub">Sub:</div>
+            <div class="spm">Edn. - Estt.- ${data.pow}, Mdl: ${data.mand} - Automatic Advancement Scheme (6/12/18/24 Yrs.) - ${data.ename},
+            ${data.desi}, ${data.pow}, Mdl: ${data.mand} - award of ${grade[data.aas]} in the cadre of ${data.desi} w.e.f. ${aasDate} - Orders - Issued - Req.Req.</div>
+            <div class="ref">Ref:</div>
+            <div class="refgo">1.G.O.Ms.No.38 Finance (HRM.IV) Department, Dated: 15-04-2015.<br>
+                2.G.O.Ms.No. 40, Edn. Dated: 07-05-2002.<br>
+                3.Application of ${data.ename}, ${data.desi}, ${data.pow}, Mdl: ${data.mand}.</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            <div class="order"> <h3><b><u>ORDER:</u></b></h3></div>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${data.ename}, ${data.desi}, has submitted an application vide reference 3rd cited through which 
+            he/she has requested for award of ${grade[data.aas]} Scale in the cadre of ${data.desi} w.e.f. ${aasDate} and to 
+            revise the basic pay in terms of the G.O. 1st cited.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In terms of the G.O. 1st cited and after careful verification of the S.B.concerned, the, 
+            ${data.pow}, Mdl: ${data.mand} is pleased to award ${grade[data.aas]} Scale i.e. scale of Rs. ${scale} in the cadre 
+            of ${data.desi} w.e.f. ${aasDate}. ${data.ename}, ${data.desi}, ${data.pow}, Mdl: ${data.mand} as shown below. 
+            In this regard entries were made in the Service Register of individual.</p>
+            <table>
+                <tr><td>1.</td><td>Date of entry into the present cadre of the post</td><td>${dojdate}</td></tr>
+                <tr><td>2.</td><td>Date of completion of (${data.aas}) Years Service</td><td>${aasDateBefore}</td></tr>
+                <tr><td>3.</td><td>Date from which the incumbent is now appointed to the ${grade[data.aas]}</td><td>${aasDate}</td></tr>
+                <tr><td></td><td>Scale of SGT on completion of ${data.aas} years service</td><td></td></tr>
+                <tr><td>4.</td><td>Existing Pay with Scale as on date of appointment to the ${grade[data.aas]} Scale</td><td><u>${data.ps}</u></td></tr>
+                <tr><td></td><td></td><td align="center">${data.pbp}</td></tr>
+                <tr><td>5.</td><td>The Pay now fixed in the ${grade[data.aas]} Scales as on ${aasDate}</td><td><u>${scale}</u></td></tr>
+                <tr><td></td><td></td><td align="center">${aasbasic}</td></tr>
+                <tr><td>6.</td><td>Sanctioned further increment on the date of next increment i.e. as on ${donidate}</td><td></td></tr>
+                <tr><td></td><td>The Monetary benefit shall accrue w.e.f. ${aasDate} Only</td><td></td></tr>
+            </table>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is however informed that this fixation will be cancelled and the payment will be recovered in lumpsum without notice, if it is found illegal or irregular.</p>
+            <div class="stamp">${data.ddodesi}<br>${data.ddooffi}</div>
+            <div class="to"><u>To</u><br>${data.ename}, ${data.desi}, ${data.pow}, Mdl: ${data.mand}</div>
+            <div class="copy"><u>Copy to:</u><br>1) The Pay Bills and Accounts Section of this office.<br>2) The Sub-Treasury Officer concerned.</div>
+        `;
+
+        // Show proceeding section and insert HTML
+        document.getElementById('proceedingSection').style.display = 'block';
+        document.getElementById('print').innerHTML = html;
+        
+        // Scroll to proceeding
+        document.getElementById('proceedingSection').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+</body>
